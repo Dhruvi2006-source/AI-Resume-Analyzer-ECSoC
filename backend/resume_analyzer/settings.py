@@ -213,6 +213,7 @@ REST_FRAMEWORK = {
         'analyze_jd': os.environ.get('ANALYZE_JD_RATE', '30/hour'),
         'mock_interview': os.environ.get('MOCK_INTERVIEW_RATE', '30/hour'),
         'signup': os.environ.get('SIGNUP_RATE', '10/hour'),
+        'skills_leaderboard': os.environ.get('SKILLS_LEADERBOARD_RATE', '60/hour'),
     },
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }

@@ -110,6 +110,10 @@ class SignupThrottle(AnonRateThrottle):
     scope = "signup"
 
 
+class SkillsLeaderboardThrottle(AnonRateThrottle):
+    scope = "skills_leaderboard"
+
+
 def verify_captcha_token(token_string):
     """
     Verifies server-side CAPTCHA challenge token.
